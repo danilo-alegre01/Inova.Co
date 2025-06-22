@@ -63,13 +63,15 @@ function exibirDetalhes() {
     detalhes.innerHTML=`
         <div class="w-100 d-flex justify-content-around align-items-center flex-wrap">
 
+        <div>
             <img
             src="${galeriaFotos[i].imagem}"
-            class="banner rounded mt-5"
+            class="banner rounded"
             alt=""
             />
+        </div>
 
-            <div class="d-flex flex-column justify-content-center align-items-start ms-lg-0 ms-0 mt-lg-5 mt-md-5 mt-4">
+            <div class="d-flex flex-column justify-content-center align-items-lg-start mt-lg-0 mt-4 mx-5 mx-lg-0">
                 <h1 class="">${galeriaFotos[i].titulo}</h1>
                 <span class="mt-2">Localização: ${galeriaFotos[i].localizacao}</span>
                 <span class="mt-2">Data: ${galeriaFotos[i].data}</span>
