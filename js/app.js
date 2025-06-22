@@ -98,11 +98,12 @@ function exibirEstudos() {
      for (let i = 0; i < 4; i++) {
         estudo.innerHTML+=`
           <div class="d-flex justify-content-center flex-wrap mb-5 py-3 border-bottom">
+
           <div class="">
             <img src="${galeriaFotos[i].imagem}" class="banner2 rounded" alt="">
           </div>
           
-        <div class="mx-lg-5 mt-lg-3 mt-5 w-50 text-mob">
+        <div class="mx-lg-5 mx-2 mt-lg-3 mt-5 w-50 text-mob">
           <h1 class="fw-bold text-lg-start text-center mb-lg-0 mb-5">Estudo de Caso: <span>${galeriaFotos[i].titulo}</span></h1>
           <h5 class="fw-bold mt-4">O Desafio</h5>
           <p>${artigos[i].paragrafo01}</p>
