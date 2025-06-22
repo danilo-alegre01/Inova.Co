@@ -1,0 +1,192 @@
+:root {
+  --bs-verde: #808836;
+  --bs-amarelo: #ffbf00;
+  --bs-laranja: #ff9a00;
+  --bs-rosa: #d10363;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 45px;
+  height: 100%;
+}
+
+.logo2 {
+  width: 170px;
+  height: 100%;
+}
+
+nav a:hover {
+  border-bottom: solid 0.1px;
+}
+
+.active {
+  color: var(--bs-amarelo) !important;
+}
+
+header p {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.card {
+  width: 18rem !important;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.1s;
+}
+
+.carousel-item img {
+  height: 45vh;
+}
+
+.contador {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-form {
+  width: 36rem;
+}
+
+#mensagem {
+  resize: none;
+}
+
+.banner {
+  width: 27rem;
+}
+
+.banner2 {
+  width: 30rem;
+  height: 100%;
+}
+
+/* .accordion-button{
+  background-color: var(--bs-rosa);
+} */
+
+.offcanvas {
+  width: 300px !important;
+}
+
+.accordion {
+  --bs-accordion-btn-bg: var(--bs-amarelo);
+  --bs-accordion-active-bg: var(--bs-rosa);
+  --bs-accordion-active-color: white;
+  --bs-accordion-btn-color: black;
+}
+
+footer h3 {
+  font-size: 1.3em;
+}
+
+.bg-verde {
+  background-color: var(--bs-verde);
+  color: white;
+}
+.bg-amarelo {
+  background-color: var(--bs-amarelo);
+  color: black;
+}
+.bg-laranja {
+  background-color: var(--bs-laranja);
+  color: white;
+}
+.bg-rosa {
+  background-color: var(--bs-rosa);
+  color: white;
+}
+
+.btn-verde {
+  background-color: var(--bs-verde);
+  color: white;
+}
+.btn-amarelo {
+  background-color: var(--bs-amarelo);
+  color: black;
+}
+.btn-laranja {
+  background-color: var(--bs-laranja);
+  color: white;
+}
+.btn-rosa {
+  background-color: var(--bs-rosa);
+  color: white;
+}
+
+.text-verde {
+  color: var(--bs-verde);
+}
+.text-amarelo {
+  color: var(--bs-amarelo);
+}
+.text-laranja {
+  color: var(--bs-laranja);
+}
+.text-rosa {
+  color: var(--bs-rosa);
+}
+
+.btn-verde:hover,
+.btn-amarelo:hover,
+.btn-laranja:hover,
+.btn-rosa:hover {
+  border: solid 0.1px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .text-mob {
+    width: 100% !important;
+    margin-top: 3rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header p {
+    font-size: 1em;
+  }
+
+  .space {
+    margin-top: 2rem;
+  }
+
+  .carousel-item img {
+    height: 30vh;
+  }
+
+  .card-form {
+    width: 35rem;
+  }
+
+  .banner {
+    width: 20rem;
+  }
+
+  .banner2 {
+    width: 20rem;
+  }
+
+  .text-mob {
+    width: 100% !important;
+  }
+
+  footer h3 {
+    font-size: 1em;
+  }
+}
