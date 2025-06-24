@@ -1,4 +1,4 @@
-function exibirInicial() {
+function exibirInicial() { //Exibe Cards na index
   let list = document.getElementById("list");
 
   for (let i = 0; i < 4; i++) {
@@ -24,7 +24,7 @@ function exibirInicial() {
   }
 }
 
-function exibirProjetos() {
+function exibirProjetos() { //Exibe Cards na projetos
   let projetos = document.getElementById("listProjetos");
 
   console.log(projetos);
@@ -52,7 +52,7 @@ function exibirProjetos() {
   }
 }
 
-function exibirGaleria() {
+function exibirGaleria() { //Exibe Imagens na galeria
   let galeria = document.getElementById("listGaleria");
 
   console.log(galeria);
@@ -75,7 +75,7 @@ function exibirGaleria() {
   }
 }
 
-function exibirDetalhes() {
+function exibirDetalhes() { //Exibe Detalhes dos registros na detalhes
   const parametro = new URLSearchParams(window.location.search);
   const id = parametro.get("id");
   let detalhes = document.getElementById("listDetalhes");
@@ -116,7 +116,7 @@ function exibirDetalhes() {
   }
 }
 
-function exibirEstudos() {
+function exibirEstudos() { //Exibe Imagens e textos na estudos
     let estudo = document.getElementById('estudos')
      for (let i = 0; i < 4; i++) {
         estudo.innerHTML+=`
@@ -144,7 +144,7 @@ function exibirEstudos() {
      }
 }
 
-function exibirSobre() {
+function exibirSobre() { //Exibe Textos e textos para accordion na sobre nós
 
   let missao = document.getElementById('missao')
   let visao = document.getElementById('visao')
@@ -173,7 +173,7 @@ function exibirSobre() {
   cont3.innerHTML=`${noticias[3].resumo}`
 }
 
-function exibirAjude() {
+function exibirAjude() { //Exibe Textos na ajude-nos
   let conteudo = document.getElementById('conteudo')
   
   for (let i = 1; i <= 5; i++) {
