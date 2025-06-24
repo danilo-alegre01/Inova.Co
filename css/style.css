@@ -112,6 +112,10 @@ footer h3 {
   font-size: 1.3em;
 }
 
+.nomes{
+  font-size: 0.8em;
+}
+
 .bg-verde {
   background-color: var(--bs-verde);
   color: white;
@@ -173,7 +177,7 @@ footer h3 {
   }
 
   .carousel-item img {
-  height: 40vh;
+  height: 60vh;
 }
 
 .grid{
