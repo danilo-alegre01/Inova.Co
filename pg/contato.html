@@ -37,6 +37,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-lg-4">
                 <li class="nav-item"><a href="../index.html" class="nav-link text-white fw-bold">Inicio</a></li>
                 <li class="nav-item"><a href="sobre.html" class="nav-link fw-bold text-white text-nowrap">Sobre Nós</a></li>
+                <li class="nav-item"><a href="projetos.html" class="nav-link text-white fw-bold">Projetos</a></li>
                 <li class="nav-item"><a href="galeria.html" class="nav-link text-white fw-bold">Galeria</a></li>
                 <li class="nav-item"><a href="ajude.html" class="nav-link fw-bold text-white text-nowrap">Como Começar</a></li>
                 <li class="nav-item"><a href="estudos.html" class="nav-link text-white fw-bold text-nowrap">Estudos de Caso</a></li>
@@ -58,6 +59,7 @@
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-column align-items-start gap-lg-4">
                 <li class="nav-item mt-3 mx-3"><a href="../index.html" class="nav-link fw-bold text-white">Inicio</a></li>
                 <li class="nav-item mt-3 mx-3"><a href="sobre.html" class="nav-link fw-bold text-nowrap text-white">Sobre Nós</a></li>
+                <li class="nav-item mt-3 mx-3"><a href="projetos.html" class="nav-link text-white fw-bold">Projetos</a></li>
                 <li class="nav-item mt-3 mx-3"><a href="galeria.html" class="nav-link text-white fw-bold">Galeria</a></li>
                 <li class="nav-item mt-3 mx-3"><a href="ajude.html" class="nav-link text-white fw-bold text-nowrap">Como Começar</a></li>
                 <li class="nav-item mt-3 mx-3"><a href="estudos.html" class="nav-link text-white fw-bold text-nowrap">Estudos de Caso</a></li>
@@ -101,13 +103,29 @@
 </div>
 
 <div class="text-center pt-4 pb-2">
-    <button class="btn btn-rosa py-2 px-3 rounded-pill" onclick="validarInput()" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar Mensagem</button>
+    <button class="btn btn-rosa py-2 px-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar Mensagem</button>
 </div>
 
         </section>
 
 
-        <section id="contato"></section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-verde">
+              <i class="bi bi-patch-check contador bg-white rounded-circle text-verde fs-5 me-3"></i>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucesso!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center py-5">
+        <strong>Mensagem enviada com Sucesso !</strong>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-laranja" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
        
     </main>

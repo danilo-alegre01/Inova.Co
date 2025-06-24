@@ -50,7 +50,7 @@ header p {
 }
 
 .carousel-item img {
-  height: 45vh;
+  height: 50vh;
 }
 
 .contador {
@@ -91,6 +91,21 @@ header p {
   --bs-accordion-active-bg: var(--bs-rosa);
   --bs-accordion-active-color: white;
   --bs-accordion-btn-color: black;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+}
+
+.img-grid{
+  width: 100%;
+}
+
+.grid img:hover{
+  transform: scale(1.05);
+  transition: 1.5s;
+  cursor: crosshair;
 }
 
 footer h3 {
@@ -156,6 +171,15 @@ footer h3 {
     width: 100% !important;
     margin-top: 3rem !important;
   }
+
+  .carousel-item img {
+  height: 40vh;
+}
+
+.grid{
+  grid-template-columns: repeat(2, 1fr);
+}
+
 }
 @media only screen and (max-width: 600px) {
   header p {
@@ -185,6 +209,11 @@ footer h3 {
   .text-mob {
     width: 100% !important;
   }
+
+  
+.grid{
+  grid-template-columns: repeat(1, 1fr);
+}
 
   footer h3 {
     font-size: 1em;

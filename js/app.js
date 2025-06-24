@@ -24,13 +24,13 @@ function exibirInicial() {
   }
 }
 
-function exibirGaleria() {
-  let galeria = document.getElementById("listGaleria");
+function exibirProjetos() {
+  let projetos = document.getElementById("listProjetos");
 
-  console.log(galeria);
+  console.log(projetos);
 
   for (let i = 0; i < 10; i++) {
-    galeria.innerHTML += `
+    projetos.innerHTML += `
         <a href="detalhes.html?id=${galeriaFotos[i].id}"
          <div class="mb-3 mb-lg-0 mt-lg-4 space">
           <div class="card rounded-4 shadow p-3">
@@ -48,6 +48,29 @@ function exibirGaleria() {
           </div>
         </div>
         </a>
+        `;
+  }
+}
+
+function exibirGaleria() {
+  let galeria = document.getElementById("listGaleria");
+
+  console.log(galeria);
+
+  for (let i = 0; i < 15; i++) {
+    galeria.innerHTML += `
+         <div class="mb-3 mb-lg-0 space">
+          <div class="p-5 text-center">
+            <img
+              src="${listaFotos[i].imagem}"
+              class="img-grid rounded"
+              alt="..."
+            />
+            <div class="mt-3">
+            <h4 class="text-center fw-bold">${listaFotos[i].nome}</h4>
+            </div>
+          </div>
+        </div>
         `;
   }
 }
@@ -84,7 +107,7 @@ function exibirDetalhes() {
 
         <div class="alert border mt-5 p-5 w-100" role="alert">
           <h1 class="border-bottom">Descrição:</h1>
-          <p class="mt-5">
+          <p class="mt-4">
          ${artigos[i].paragrafo01}
           </p>
         </div>
@@ -121,32 +144,53 @@ function exibirEstudos() {
      }
 }
 
-function validarInput() {
-    let nome = document.getElementById('nome').value
-    let email = document.getElementById('email').value
-    let msg = document.getElementById('mensagem').value
+function exibirSobre() {
 
-    if(nome == '' || email == '' || msg == ''){
-        alert('Preencha todos os campos')
-    }else{
-        document.getElementById('contato').innerHTML=`
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header bg-verde">
-              <i class="bi bi-patch-check contador bg-white rounded-circle text-verde fs-5 me-3"></i>
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Sucesso!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center py-5">
-        <strong>Mensagem enviada com Sucesso !</strong>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-laranja" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>`
-    }
+  let missao = document.getElementById('missao')
+  let visao = document.getElementById('visao')
+  let valores = document.getElementById('valores')
+  let btn1 = document.getElementById('btn1')
+  let btn2 = document.getElementById('btn2')
+  let btn3 = document.getElementById('btn3')
+  let cont1 = document.getElementById('cont1')
+  let cont2 = document.getElementById('cont2')
+  let cont3 = document.getElementById('cont3')
+  let options = ''
+
+  for (let i = 0; i < 6; i++) {
+    options += `<li>${poemas[i].titulo}</li>`  
+  }
+    
+  missao.innerHTML = `${artigos[1].paragrafo01}`
+  visao.innerHTML = `${artigos[1].paragrafo02}`
+  valores.innerHTML = `${options}`
+  
+  btn1.innerText=`${noticias[1].titulo}`
+  btn2.innerText=`${noticias[2].titulo}`
+  btn3.innerText=`${noticias[3].titulo}`
+  cont1.innerHTML=`${noticias[1].resumo}`
+  cont2.innerHTML=`${noticias[2].resumo}`
+  cont3.innerHTML=`${noticias[3].resumo}`
+}
+
+function exibirAjude() {
+  let conteudo = document.getElementById('conteudo')
+  
+  for (let i = 1; i <= 5; i++) {
+
+    conteudo.innerHTML+=`
+     <div class="d-flex justify-content-center align-items-start flex-lg-nowrap flex-lg-nowrap flex-wrap mx-2 mb-5 py-3">
+                <div class="mb-3 mb-lg-0">
+                    <h3 class="rounded-circle contador bg-laranja px-3 py-1">${i}</h3>
+                </div>
+
+                <div class="d-flex flex-column align-items-lg-start px-3">
+                    <h3 class="fw-bold">${artigos[i].titulo}</h3>
+                    <p>${artigos[i].paragrafo02}</p>
+                </div>
+            </div>
+`
+
+  }
 
 }
